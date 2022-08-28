@@ -10,7 +10,7 @@ def wrt(i):
             if(j == " " or j == ""):
                 text = text + " "
             elif(j == "#"):
-                text = text + ":hash:" 
+                text = text + ":hash:" + " "
             else:
                 text = text + ":regional_indicator_" + j + ":" + " "
     return text
