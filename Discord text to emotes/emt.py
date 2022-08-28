@@ -9,6 +9,8 @@ def wrt(i):
         except ValueError:
             if(j == " " or j == ""):
                 text = text + " "
+            elif(j == "#"):
+                text = text + ":hash:" 
             else:
                 text = text + ":regional_indicator_" + j + ":" + " "
     return text
@@ -16,5 +18,5 @@ def wrt(i):
 def uinput(n):
     i = []
     for j in n:
-        i.append(j)
+        i.append(j.lower())
     return i
